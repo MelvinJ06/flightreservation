@@ -13,7 +13,7 @@ const FlightSearch = () => {
       const response = await fetch(queryString, {
         method: "GET",
         headers: {
-          "Cache-Control": "no-cache", // Prevent caching
+          "Cache-Control": "no-cache", 
           Pragma: "no-cache",
         },
       });

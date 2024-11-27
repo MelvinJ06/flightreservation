@@ -1,11 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { useNavigate } from 'react-router-dom'; 
 
 const FlightCard = ({ flight }) => {
-  const navigate = useNavigate();  // Initialize navigate function
+  const navigate = useNavigate();  
 
   const handleBookNow = () => {
-    navigate(`/booking/${flight._id}`);  // Navigate to the booking page for the selected flight
+    navigate(`/booking/${flight._id}`);  
   };
 
   return (
@@ -18,7 +18,7 @@ const FlightCard = ({ flight }) => {
       <p>Seats Available: {flight.availableSeats}</p>
       <p>Class: {flight.bookingClass}</p>
       <button
-        onClick={handleBookNow}  // On click, navigate to the booking page
+        onClick={handleBookNow}  
         className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg w-full"
       >
         Book Now

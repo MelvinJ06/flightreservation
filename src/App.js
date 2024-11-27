@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom'; // No need to import BrowserRouter here
+import { Route, Routes } from 'react-router-dom'; 
 import Home from './pages/Home';
 import FlightSearch from './pages/FlightSearch';
 import BookingPage from './pages/BookingPage';
