@@ -4,7 +4,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 const PaymentPage = () => {
   const location = useLocation(); 
-  const totalPrice = new URLSearchParams(location.search).get("totalPrice"); // Extract totalPrice from query params
+  const totalPrice = new URLSearchParams(location.search).get("totalPrice"); 
 
   const handleSuccess = () => {
     window.location.href = "/my-bookings";
@@ -13,7 +13,7 @@ const PaymentPage = () => {
   return (
     <PayPalScriptProvider
       options={{
-        "client-id": "AXqhJYyPjtYdA52jwHfzEAfitsMtXf4nICchniH_7jiZpeUDmTVYnLbxyGZyucIQqvFDUxKafTN12wfx", // Replace with your PayPal client ID
+        "client-id": "AXqhJYyPjtYdA52jwHfzEAfitsMtXf4nICchniH_7jiZpeUDmTVYnLbxyGZyucIQqvFDUxKafTN12wfx", 
         currency: "USD",
       }}
     >
@@ -26,7 +26,7 @@ const PaymentPage = () => {
                 purchase_units: [
                   {
                     amount: {
-                      value: totalPrice, // Total price as a string
+                      value: totalPrice, 
                     },
                   },
                 ],

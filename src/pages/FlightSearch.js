@@ -5,31 +5,6 @@ import FlightCard from "../components/FlightCard";
 const FlightSearch = () => {
   const [flights, setFlights] = useState([]);
 
-  // const searchFlights = async (searchParams) => {
-  //   try {
-  //     const queryString = `/api/flights/search?departure=${searchParams.departure}&arrival=${searchParams.arrival}&departureDate=${searchParams.departureDate}&bookingClass=${searchParams.bookingClass}`;
-  //     console.log("API Request:", queryString);
-
-  //     const response = await fetch(queryString, {
-  //       method: "GET",
-  //       headers: {
-  //         "Cache-Control": "no-cache", 
-  //         Pragma: "no-cache",
-  //       },
-  //     });
-
-  //     if (!response.ok) {
-  //       throw new Error(`Error: ${response.status} - ${response.statusText}`);
-  //     }
-
-  //     const data = await response.json();
-  //     console.log("API Response:", data);
-  //     setFlights(data);
-  //   } catch (error) {
-  //     console.error("Error fetching flights:", error.message);
-  //   }
-  // };
-
   return (
     <div className="bg-gradient-to-br from-indigo-600 to-blue-500 min-h-screen">
       {/* Hero Section */}

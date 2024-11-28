@@ -9,7 +9,7 @@ const SearchForm = ({ setFlights }) => {
   const handleSearch = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get('http://localhost:5555/api/flights/search', {
+      const response = await axios.get('https://flightbooking-nbfc.onrender.com/api/flights/search', {
         params: {
           departure,
           arrival,

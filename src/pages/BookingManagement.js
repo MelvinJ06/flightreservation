@@ -10,7 +10,7 @@ const BookingManagement = () => {
     if (email) {
         const fetchBookings = async () => {
             try {
-                const response = await axios.get(`http://localhost:5555/api/bookings/${email}`);
+                const response = await axios.get(`https://flightbooking-nbfc.onrender.com/api/bookings/${email}`);
                 setBookings(response.data);
             } catch (error) {
                 console.error('Error fetching bookings:', error);
