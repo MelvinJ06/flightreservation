@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { FaPlane, FaRegCalendarCheck, FaHeadset } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -13,9 +14,9 @@ const Home = () => {
           <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
             Explore the world with affordable and flexible flight options. Find the best deals and book your next adventure now.
           </p>
-          <a href="/flight-search" className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+          <Link to="/flight-search" className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
             Find Your Flight
-          </a>
+          </Link>
         </div>
       </div>
       <div className="container mx-auto py-12 px-6">
