@@ -11,7 +11,7 @@ const BookingPage = () => {
   useEffect(() => {
     const fetchFlight = async () => {
       try {
-        const response = await axios.get(`https://flightbooking-1-gygh.onrender.com/api/flights/${flightId}`);
+        const response = await axios.get(`https://flightbooking-2.onrender.com/api/flights/${flightId}`);
         setFlight(response.data);
       } catch (error) {
         console.error('Error fetching flight details:', error);
@@ -22,12 +22,12 @@ const BookingPage = () => {
 
   const handleBooking = async () => {
     const bookingData = { flightId, seatsBooked: seats };
-    const response = await axios.post('https://flightbooking-1-gygh.onrender.com/api/bookings', bookingData);
+    const response = await axios.post('https://flightbooking-2.onrender.com/api/bookings', bookingData);
     const result = response.data;
     const { totalPrice, _id } = result;
 
     // Create PayPal Payment
-    const paymentResponse = await axios.post('https://flightbooking-1-gygh.onrender.com/api/paypal/create', {
+    const paymentResponse = await axios.post('https://flightbooking-2.onrender.com/api/paypal/create', {
       bookingId: _id,
       totalPrice
     });

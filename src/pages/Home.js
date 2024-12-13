@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="relative bg-cover bg-center bg-no-repeat text-white py-20" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1569080855-d779a823b374?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE3fHxmbGlnaHRzJTIwYWlycGxhbmV8ZW58MHx8fHwxNjg2NjMwMjMw&ixlib=rb-1.2.1&q=80&w=1080")' }}>
+      <div className="relative bg-cover bg-center bg-no-repeat text-white py-20">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="container mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">Fly High with Us!</h1>
