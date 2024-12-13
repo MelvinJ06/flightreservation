@@ -11,6 +11,9 @@ import BookingPage from './pages/BookingPage';
 import FlightSearch from './pages/FlightSearch';
 import Home from './pages/Home';
 import PaymentPage from "./pages/PaymentPage";
+import RegisterPage from "./pages/register";
+import LoginPage from "./pages/login";
+import FrontPage from "./pages/front";
 
 const App = () => {
   const [flights, setFlights] = useState([]);
@@ -29,12 +32,14 @@ function App() {
       <Navbar />
       <div className="container mx-auto mt-4">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/search" element={<FlightSearch />} />
           <Route path="/booking/:id" element={<BookingPage />} />
           <Route path="/my-bookings" element={<BookingManagement />} />
           <Route path="/payment" element={<PaymentPage />} />
-
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/front" element={<FrontPage/>} />
         </Routes>
       </div>
     </>
