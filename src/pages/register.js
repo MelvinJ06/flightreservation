@@ -79,7 +79,7 @@ function Register() {
                     </button>
                     <Link
                         className="border-2 bg-gradient-to-r from-blue-500 to-indigo-700 border-black rounded-2xl p-2"
-                        to="/front"
+                        to="/"
                     >
                         Back
                     </Link>
