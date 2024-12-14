@@ -13,16 +13,16 @@ import FrontPage from "./pages/front";
 ReactDOM.render(
   <Router>
     <Routes>
+    <Route path="/" element={<FrontPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/flight-search" element={<FlightSearch />} />
       <Route path="/booking/:flightId" element={<BookingPage />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/search" element={<FlightSearch />} />
-          <Route path="/booking/:id" element={<BookingPage />} />
-          <Route path="/my-bookings" element={<BookingManagement />} />
-          <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/front" element={<FrontPage/>} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/search" element={<FlightSearch />} />
+      <Route path="/booking/:id" element={<BookingPage />} />
+      <Route path="/my-bookings" element={<BookingManagement />} />
+      <Route path="/payment" element={<PaymentPage />} />
+      <Route path="/login" element={<LoginPage />} />
     </Routes>
   </Router>,
   document.getElementById('root')
