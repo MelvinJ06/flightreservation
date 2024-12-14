@@ -8,8 +8,8 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="relative bg-cover bg-center bg-no-repeat text-white py-20">
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="container mx-auto text-center relative z-10">
+        <div className="absolute inset-0 bg-black opacity-30 bg-gradient-to-r from-green-400 to-yellow-400"></div>
+        <div className="container mx-auto text-center relative z-10 ">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">Fly High with Us!</h1>
           <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
             Explore the world with affordable and flexible flight options. Find the best deals and book your next adventure now.
